@@ -1,7 +1,7 @@
 {
   "name": "electron_demo",
   "version": "1.0.0",
-  "description": "Hello World!",
+  "description": "Check Ashures' other projects on GitHub",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
