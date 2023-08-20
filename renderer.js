@@ -10,8 +10,8 @@ function handleMouseMove(event) {
 function moveBackground(event) {
     const mouseX = (event.clientX / window.innerWidth - 0.5) * 2;
     const mouseY = (event.clientY / window.innerHeight - 0.5) * 2;
-    const totalMoveX = -mouseX * 1 + 50;
-    const totalMoveY = -mouseY * 1 + 50;
+    const totalMoveX = -mouseX * 1.5 + 50;
+    const totalMoveY = -mouseY * 1.5 + 50;
     
     background.style.backgroundPosition = `${totalMoveX}% ${totalMoveY}%`;
     background.style.filter = `blur(${Math.abs(mouseX)}px)`;
