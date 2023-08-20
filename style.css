@@ -9,9 +9,11 @@ body {
 .top #background {
     background-image: url('./public/images/main_background.jpg');
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 200%;
+    background-repeat: no-repeat;
 }
 
 .top #background #black-filter {
@@ -23,15 +25,6 @@ body {
     height: 100%;
 }
 
-.top #background #black-filter #centred-title {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .top #centred-title h2{
     color: rgba(255, 255, 255, 0.3);
@@ -41,11 +34,29 @@ body {
 }
 
 .top #centred-title h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: #FFF;
     font: bold 20vh 'Arial', 'Helvetica', sans-serif;
     text-transform: lowercase;
     letter-spacing: 2.5vh;
     margin: 0;
+}
+
+.top #centred-title #ashures-main {
+    z-index: 10;
+}
+
+.top #centred-title #ashures-blue {
+    z-index: 5;
+    color: rgba(0, 255, 255, 0.7);
+}
+
+.top #centred-title #ashures-pink {
+    z-index: 1;
+    color: rgba(255, 105, 180, 0.7);
 }
 
 .top #background #black-filter #char-overlay {
@@ -58,5 +69,5 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: 20;
 }
