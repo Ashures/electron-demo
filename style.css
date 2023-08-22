@@ -25,14 +25,6 @@ body {
     height: 100%;
 }
 
-
-.top #centred-title h2{
-    color: rgba(255, 255, 255, 0.3);
-    font: bold 5vh 'Arial', 'Helvetica', sans-serif;
-    text-transform: lowercase;
-    margin-top: -4vh;
-}
-
 .top #centred-title h1 {
     position: absolute;
     left: 50%;
@@ -40,7 +32,6 @@ body {
     transform: translate(-50%, -50%);
     color: #FFF;
     font: bold 20vh 'Arial', 'Helvetica', sans-serif;
-    text-transform: lowercase;
     letter-spacing: 2.5vh;
     margin: 0;
 }
@@ -61,7 +52,6 @@ body {
 
 .top #background #black-filter #char-overlay {
     position: absolute;
-    top: 0;
     right: 0;
     background-image: url('./public/images/johnny-silverhand.png');
     background-size: contain;
